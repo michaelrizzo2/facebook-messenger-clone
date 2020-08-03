@@ -9,7 +9,7 @@ function App() {
     {/*input field */}
     {/* button*/}
     {/* the messages*/}
-    <input  value={input} onChange={event=>Setinput()}/> 
+    <input  value={input} onChange={event=>Setinput(event.target.value)}/> 
     <button> Send Message</button>
     </div>
   );
