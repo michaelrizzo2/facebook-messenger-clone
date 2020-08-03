@@ -3,8 +3,13 @@ import './App.css';
 
 function App() {
   return (
-    <h1>Hello Programmers</h1>
     <div className="App">
+    <h1>Hello Programmers</h1>
+    {/*input field */}
+    {/* button*/}
+    {/* the messages*/}
+    <input /> 
+    <button> Send Message</button>
     </div>
   );
 }
