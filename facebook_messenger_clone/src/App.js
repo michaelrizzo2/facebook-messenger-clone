@@ -3,6 +3,12 @@ import './App.css';
 
 function App() {
   const [input,Setinput]=useState("")
+  const [messages,setmessages]=useState([])
+  const sendMessage=event =>
+  {
+    setmessages([...messages,input])
+    Setinput('')
+  }
   return (
     <div className="App">
     <h1>Hello Programmers</h1>
@@ -10,7 +16,7 @@ function App() {
     {/* button*/}
     {/* the messages*/}
     <input  value={input} onChange={event=>Setinput(event.target.value)}/> 
-    <button> Send Message</button>
+    <button onClick={sendMessage}> Send Message</button>
     </div>
   );
 }
