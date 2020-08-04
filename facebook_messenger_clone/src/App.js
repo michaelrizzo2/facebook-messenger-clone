@@ -32,7 +32,7 @@ useEffect(() => {
     </form>
     {/* the messages*/}
     {messages.map(message =>(
-      <Message username={message.userName} text={message.text}/>
+      <Message username={userName} message={message}/>
     ))}
     </div>
   );
