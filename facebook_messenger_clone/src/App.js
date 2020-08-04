@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './App.css';
 import {Button} from "@material-ui/core"
 import {FormControl,Input,InputLabel} from "@material-ui/core"
@@ -7,6 +7,13 @@ import Message from "./Message"
 function App() {
   const [input,Setinput]=useState("")
   const [messages,setmessages]=useState([])
+  const [userName,setUsername]=useState("")
+useEffect(() => {
+ //const name=prompt("Please enter your name")
+ setUsername(prompt("please enter your name"))
+}
+, [])
+
   const sendMessage=event =>
   {
     event.preventDefault()
@@ -16,6 +23,7 @@ function App() {
   return (
     <div className="App">
     <h1>Hello Programmers</h1>
+    <h2>Welcome {userName}</h2>
     <form>
       <FormControl> <InputLabel >Enter your Message</InputLabel>
       <Input value={input} onChange={event=>Setinput(event.target.value)} />
