@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import './App.css';
 import {Button} from "@material-ui/core"
 import {FormControl,Input,InputLabel} from "@material-ui/core"
+import Message from "./Message"
 
 function App() {
   const [input,Setinput]=useState("")
@@ -17,14 +18,13 @@ function App() {
     <h1>Hello Programmers</h1>
     <form>
       <FormControl> <InputLabel >Enter your Message</InputLabel>
-      <Input />
-      </FormControl>
-    <input  value={input} onChange={event=>Setinput(event.target.value)}/> 
+      <Input value={input} onChange={event=>Setinput(event.target.value)} />
     <Button disabled={!input} type="submit" variant="outlined" color="primary" onClick={sendMessage}> Send Message</Button>
+      </FormControl>
     </form>
     {/* the messages*/}
     {messages.map(message =>(
-      <p>{message}</p>
+      <Message text={message}/>
     ))}
     </div>
   );
