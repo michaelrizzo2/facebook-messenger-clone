@@ -9,7 +9,7 @@
 {
     margin-left: auto;
     color: white;
-    text-align: right;
+    text-align: left;
 }
 
 .message_usercard{
@@ -17,7 +17,7 @@
 
 }
 
-.message_usercard{
+.message_guestcard{
     background-color: #e9e9eb;
 
 }
