@@ -11,7 +11,7 @@ function App() {
   const [messages,setmessages]=useState([])
   const [userName,setUsername]=useState("")
 useEffect(()=>{
-db.collection("messages").onSnapshot(snapshot=>
+db.collection("messages").orderBy('timestamp','desc').onSnapshot(snapshot=>
 {
   setmessages(snapshot.docs.map(doc =>doc.data()))
 })
