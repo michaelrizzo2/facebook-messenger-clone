@@ -4,13 +4,15 @@ import "./Message.css"
 function Message({message,userName}) {
     const isUser=userName===message.username
     return (
-            <Card className={`message ${isUser && "message_user"}`}>
+        <div className={`message ${isUser && "message_user"}`} >
+            <Card className={isUser ? "message_usercard" : "message_guestcard"}>
                 <CardContent>
                     <Typography color="White" variant="h5" component="h2">
                         {message.userName} : {message.text}
                     </Typography>
                 </CardContent>
             </Card>
+            </div>
     )
 }
 
