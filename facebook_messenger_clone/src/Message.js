@@ -8,7 +8,7 @@ function Message({message,userName}) {
             <Card className={isUser ? "message_usercard" : "message_guestcard"}>
                 <CardContent>
                     <Typography color="White" variant="h5" component="h2">
-                        {message.userName} : {message.text}
+                        {message.userName} : {message.message}
                     </Typography>
                 </CardContent>
             </Card>

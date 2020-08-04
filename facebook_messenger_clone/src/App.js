@@ -3,10 +3,11 @@ import './App.css';
 import {Button} from "@material-ui/core"
 import {FormControl,Input,InputLabel} from "@material-ui/core"
 import Message from "./Message"
+import db from "./firebase"
 
 function App() {
   const [input,Setinput]=useState("")
-  const [messages,setmessages]=useState([{userName:"michael",text:"this is a test message"},{userName:"robert",text:"how are you doing?"}])
+  const [messages,setmessages]=useState([])
   const [userName,setUsername]=useState("")
 useEffect(() => {
  //const name=prompt("Please enter your name")
