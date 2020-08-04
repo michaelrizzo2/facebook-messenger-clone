@@ -14,6 +14,13 @@ useEffect(() => {
 }
 , [])
 
+useEffect(()=>{
+db.collection("messages").onSnapShot(snapshot=>
+{
+  setmessages(snapshot.docs.map(doc =>doc.data))
+})
+},[])
+
   const sendMessage=event =>
   {
     event.preventDefault()

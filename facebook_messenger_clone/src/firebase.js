@@ -10,4 +10,4 @@ const firebaseapp=firebase.initializeApp({apiKey: "AIzaSyDKE9G2HFaK_D51DML8titvD
 
 
   const db=firebaseapp.firestore()
-  export {db}
+  export default db;
