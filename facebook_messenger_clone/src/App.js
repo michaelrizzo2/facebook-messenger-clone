@@ -9,18 +9,19 @@ function App() {
   const [input,Setinput]=useState("")
   const [messages,setmessages]=useState([])
   const [userName,setUsername]=useState("")
+useEffect(()=>{
+db.collection("messages").onSnapshot(snapshot=>
+{
+  setmessages(snapshot.docs.map(doc =>doc.data()))
+})
+},[])
+
 useEffect(() => {
  //const name=prompt("Please enter your name")
  setUsername(prompt("please enter your name"))
 }
 , [])
 
-useEffect(()=>{
-db.collection("messages").onSnapShot(snapshot=>
-{
-  setmessages(snapshot.docs.map(doc =>doc.data))
-})
-},[])
 
   const sendMessage=event =>
   {
