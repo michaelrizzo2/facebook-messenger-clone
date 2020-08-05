@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
 import {Button} from "@material-ui/core"
-import {FormControl,Input,InputLabel} from "@material-ui/core"
+import {FormControl,Input,InputLabel,IconButton} from "@material-ui/core"
 import Message from "./Message"
 import firebase from "firebase"
 import db from "./firebase"
 import FlipMove from "react-flip-move"
+import SendIcon from '@material-ui/icons/Send';
 
 function App() {
   const [input,Setinput]=useState("")
@@ -42,7 +43,7 @@ useEffect(() => {
     <form className="app_form">
       <FormControl> <InputLabel >Enter your Message</InputLabel>
       <Input value={input} onChange={event=>Setinput(event.target.value)} />
-    <Button disabled={!input} type="submit" variant="outlined" color="primary" onClick={sendMessage}> Send Message</Button>
+    <IconButton disabled={!input} type="submit" variant="outlined" color="primary" onClick={sendMessage}> <SendIcon /> </IconButton>
       </FormControl>
     </form>
     {/* the messages*/}
