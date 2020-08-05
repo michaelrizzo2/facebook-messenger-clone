@@ -6,9 +6,10 @@
 {
   padding:20px;
   position: fixed;
-  bottom:20px;
+  bottom:0px;
   background-color: #e9e9eb;
   z-index: 1;
   width: 100%;
+  margin:20px;
 }
 
