@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react';
 import './App.css';
-import {Button} from "@material-ui/core"
 import {FormControl,Input,InputLabel,IconButton} from "@material-ui/core"
 import Message from "./Message"
 import firebase from "firebase"
@@ -49,7 +48,7 @@ useEffect(() => {
     {/* the messages*/}
     <FlipMove>
     {messages.map(({id,message}) =>(
-      <Message key={id} username={userName} message={message}/>
+      <Message key={id} userName={userName} message={message}/>
     ))}
     </FlipMove>
     </div>
