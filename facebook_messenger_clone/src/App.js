@@ -39,7 +39,7 @@ useEffect(() => {
     <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" style={{marginTop:'3px'}} />
     <h1>Hello Programmers</h1>
     <h2>Welcome {userName}</h2>
-    <form>
+    <form className="app_form">
       <FormControl> <InputLabel >Enter your Message</InputLabel>
       <Input value={input} onChange={event=>Setinput(event.target.value)} />
     <Button disabled={!input} type="submit" variant="outlined" color="primary" onClick={sendMessage}> Send Message</Button>
