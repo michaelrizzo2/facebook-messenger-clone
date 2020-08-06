@@ -5,15 +5,10 @@
     width: fit-content;
 }
 
-.message_user{
-    margin-left: auto;
-    
-}
-
-
-.message_setcard{
+.message_usercard{
     background-color: #0084FF;
     color: #fff;
+    text-align: right;
    
     
 }
@@ -21,10 +16,13 @@
 .message_guestcard{
     background-color: #f1f0f0;
     color: black;
+    text-align: left;
+   
 }
+
 .message
 {
-     margin-top: 1px;
+    margin-top: 1px;
     margin-right: 0px;
     margin-bottom: 1px;
     margin-left: 0px;
