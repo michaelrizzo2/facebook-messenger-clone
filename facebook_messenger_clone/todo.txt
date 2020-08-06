@@ -1,1 +1,4 @@
-stopped at 2:01:38 for video
+stopped at 2:19:38 for video
+
+get styling for the bubbles and check styling for app itself.
+

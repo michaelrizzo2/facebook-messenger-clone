@@ -39,14 +39,16 @@ useEffect(() => {
     <img src="https://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" style={{marginTop:'3px'}} />
     <h1>Hello Programmers</h1>
     <h2>Welcome {userName}</h2>
-    <form className="app_form">
-      <FormControl> <InputLabel >Enter your Message</InputLabel>
-      <Input value={input} onChange={event=>Setinput(event.target.value)} />
-    <IconButton disabled={!input} type="submit" variant="outlined" color="primary" onClick={sendMessage}> <SendIcon /> </IconButton>
-      </FormControl>
-    </form>
+    <div className="form_container">
+      <form className="app_form">
+        <FormControl className="app_formcontrol"> <InputLabel >Enter your Message</InputLabel>
+        <Input className="app_input" value={input} onChange={event=>Setinput(event.target.value)} />
+      <IconButton className="app_iconButton" disabled={!input} type="submit" variant="outlined" color="primary" onClick={sendMessage}> <SendIcon /> </IconButton>
+        </FormControl>
+      </form>
+    </div>
     {/* the messages*/}
-    <FlipMove>
+    <FlipMove className="messages_container" style={{'z-index': '-1'}}>
     {messages.map(({id,message}) =>(
       <Message key={id} userName={userName} message={message}/>
     ))}
