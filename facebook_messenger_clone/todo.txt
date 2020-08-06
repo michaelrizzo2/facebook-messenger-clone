@@ -26,3 +26,8 @@ lock account after a few attempts
         </div>
     )
 }
+
+.messageBox {
+	position: relative;
+    z-index : -1
+}

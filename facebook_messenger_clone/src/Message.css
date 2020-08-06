@@ -30,13 +30,7 @@
     padding-right: 12px;
     padding-bottom: 6px;
     padding-left: 12px;
-    width: fit-content;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.34;
     font-size: 15px;
 }
 
-.messageBox {
-	position: relative;
-    z-index : -1
-}
