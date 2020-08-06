@@ -1,11 +1,12 @@
 stopped at 2:19:38 for video
 
-check if the is user is being set correctly.
+1.check if the is user is being set correctly.first thing that needsa to be done.
 
-make the bubles different colers for the uiser and the guest.
 
-left for guest user and right for normal user.
+    make the bubles different colers for the user and the guest.
 
-option to check for Known Users and ask for a user that exists.
+    left for guest user and right for normal user.
+
+2.option to check for Known Users and ask for a user that exists.
 
 lock account after a few attempts
