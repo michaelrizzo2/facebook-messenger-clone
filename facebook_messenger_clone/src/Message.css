@@ -5,19 +5,41 @@
     width: fit-content;
 }
 
-.message_user
-{
+.message_user{
     margin-left: auto;
-    color: white;
-    text-align: right;
+    
 }
 
-.message_usercard{
-    background-color: #0b81ff;
 
+.message__setcard{
+    background-color: #0084FF;
+    color: #fff;
+   
+    
 }
 
 .message_guestcard{
-    background-color: #e9e9eb;
+    background-color: #f1f0f0;
+    color: black;
+}
+.message
+{
+     margin-top: 1px;
+    margin-right: 0px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.34;
+    font-size: 15px;
+    text-align: right;
+}
 
+.messageBox {
+	position: relative;
+    z-index : -1
 }

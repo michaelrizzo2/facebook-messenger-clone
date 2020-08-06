@@ -7,7 +7,8 @@ const Message =forwardRef(({message,userName},ref)=> {
     console.log(message.UserName)
     console.log(isUser)
     return (
-        <div ref={ref} className={`message ${isUser && "message_user"}`} >
+        <div className="message_box">
+            <div ref={ref} className={`message ${isUser && "message_user"}`} >
             <Card className={isUser ? "message_usercard" : "message_guestcard"}>
                 <CardContent>
                     <Typography color="White" variant="h5" component="h2">
@@ -16,6 +17,7 @@ const Message =forwardRef(({message,userName},ref)=> {
                 </CardContent>
             </Card>
             </div>
+        </div>
     )
 }
 )
