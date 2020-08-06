@@ -1,11 +1,11 @@
 stopped at 2:19:38 for video
 
-get styling for the bubbles and check styling for app itself.
-
 check if the is user is being set correctly.
 
 make the bubles different colers for the uiser and the guest.
 
-left for guiest user and right for normal user.
+left for guest user and right for normal user.
 
 option to check for Known Users and ask for a user that exists.
+
+lock account after a few attempts
