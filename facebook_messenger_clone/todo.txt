@@ -1,6 +1,6 @@
 stopped at 2:19:38 for video
 
-1.check if the is user is being set correctly.first thing that needsa to be done.
+1.check if the is user is being set correctly.first thing that needsa to be done.THis is set correctly
 
 
     make the bubles different colers for the user and the guest.

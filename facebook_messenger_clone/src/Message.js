@@ -3,8 +3,6 @@ import {Card,CardContent,Typography} from "@material-ui/core"
 import "./Message.css"
 const Message =forwardRef(({message,userName},ref)=> {
     const isUser=userName===message.userName
-    console.log(userName)
-    console.log(message.UserName)
     console.log(isUser)
     return (
         <div className="message_box">
