@@ -47,8 +47,7 @@ useEffect(() => {
         </FormControl>
       </form>
     </div>
-    {/* the messages*/}
-    <FlipMove className="messages_container" style={{'z-index': '-1'}}>
+    <FlipMove className="messages_container" style={{'zIndex': '-1'}}>
     {messages.map(({id,message}) =>(
       <Message key={id} userName={userName} message={message}/>
     ))}
